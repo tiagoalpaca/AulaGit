@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula <HTML></HTML></title>
+</head>
+<body>
+    <!-- Comentarios são feitos com CTRL+: -->
+    ola
+    <div>
+        <!-- O escape de caracteres e pra fazer a comparação, ja que <> e usado pra fechar ou abrir tags -->
+        <p> Conteudo </p>
+        <!-- Figure e usado para trabalhar melhor as imagens,como se fosse um contener -->
+        <figure>
+        <!-- A imagem tem tag unica, de abertura ou fechamento, -->
+        <!-- O src procura o endereço da imagem e o alt uma mensagem caso a imagem não apareça -->
+        <img src ="https://i0.wp.com/www.jbox.com.br/wp/wp-content/uploads/2023/02/pikachu-capitao-destacada.jpg?fit=1340%2C846&ssl=1" alt="Pikachu novo desenho" > 
+        <!-- O figcaption serve para legendar a sua imagem -->
+        <figcaption> Imagem do novo Pikachu  </figcaption>
+    </figure>
+        <!-- O escape de caracteres e pra fazer a comparação, ja que <> e usado pra fechar ou abrir tags -->
+        <!-- aqui compara que 1 < 4, 1 menor que 4, o br pula linha -->
+        <p> Comparações </p>
+        1 &lt; 4 <br>
+        <!-- aqui compara que 10>5, 10 maior que 5 -->
+        10 &gt; 5 <br>
+
+    <!-- Lista Ordenada = OL , cada item da lista é indicado pela tag <li>-->
+    <!-- Na lista ordenada ainda temos o atributo type, para indicar o tipo da ordenação, como type"1 - lista de numeros" -->
+    <p> Lista Ordenada </p>
+    <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+    <!-- Na lista ordenada ainda temos o atributo type, para indicar o tipo da ordenação, como type"1 - lista de numeros" -->
+    <p> Lista Ordenada com letras maisculas </p>
+    <ol type= "A">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+    <!-- Lista não odernada UL, não tem identificadores,muito usadas nos menus-->
+    <p> Lista não Ordenada </p>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ul>
+    <!-- Lista Descrição -->
+    <p> Lista Descrição </p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hyper Text Markup Language</dd>
+        <dt>CSS</dt>
+        <dd> Cascading Style Sheet</dd>
+        <dt></dt>
+        <!-- dt é termo e o dd a descrição sobre esse termo -->
+    </dl>
+    </div>
+
+    <!-- Porcentagem de um progresso -->
+    <p> Descrição do progress </p>
+    <progress value = "50" max = "100"></progress><br>
+    <p> Descrição do meter </p>
+    <!-- tem minimo e maximo -->
+    <meter value="30" max="100" min="0"></meter><br>
+
+    <!-- Link liga um conteudo a outro, ele faz o direcionamento para outra pagina -->
+    <a href="home.html">Home</a> 
+    <a href="projetos.html">Projetos</a>
+    <a href="coontato.html">Contato</a>
+    <br>
+    <!-- quando ele clicar no home ele vai para a pagina home.html, o mesmo pros outros casos. -->
+    <!-- o href pode referenciar paginas da internet -->
+    <a href="https://www.google.com.br/">Google</a>
+    
+</body>
+</html>
