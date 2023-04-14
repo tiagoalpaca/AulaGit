@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- A tag form representa um formulario-->
+    <form>
+    </form>
+
+    <!-- Accept-charset defini o charset usado no formulario,ele vai dentro do form pois e um atributo-->
+    <form action="" accept charset = "UTF-8"
+    ></form>
+
+    <!--Autocomplete vai tentar auto completar,action especifica para onde os dados do formulario serao enviados, o method especifica o metodo http utilizado na submissao-->
+    <form action="/cadastro/usuario/1" method="post" autocomplete = "on">
+        <input type="text" name = "email">
+    </form>
+
+    <!-- A blank indica onde a pagina destino sera aberta-->
+    <form target="_blank">
+         <!-- input serve para escrevermos pequenos textos,voce passa o tipo do texto e o nome do campo-->
+        <input type="text" name = "email"/>
+         <!-- O email obriga o campo a ter o @-->
+         <input type= "email"/> 
+        <!-- A search o negocio de busca-->
+        <input type= "search"/>
+        <!-- A url o simbolo-->
+        <input type="url"/>
+         <!-- O number mostra que o campo vai ser um numero-->
+         <input type="number"/>
+         <!-- raid button e utilizado em campos que podemos selicionar apenas uma opção,para isso e necessario o name,um exemplo como sexo masculino ou feminino -->
+         <input type = "radio" name = "sexo" checked = "checked"/>Homem
+         <input type = "radio" name = "sexo"/>Mulher
+         <!-- sem o name, ele vai permitir selecionar mais de uma opção -->
+         <input type = "radio" />Opção 1
+         <input type = "radio" />Opção 2
+         <input type = "radio" />Opção 2
+        
+         <!-- Checkbox serve para selecionarmos mais de uma opção -->
+         <h2>Escolha quantas linguagens voce programa:</h2>
+         <input type="checkbox" name="cor1"/>Python
+         <input type="checkbox" name="cor1"/>HTML 5
+         <input type="checkbox" name="cor1"/>CSS3
+
+         <!-- select permite cria uma lista onde podemos selecionar um item -->
+        <select>
+            <option value="html">HTMl 5</option>
+            <option value="html">CSS3</option>
+            <option value="html">Java</option>
+        </select>
+
+        <!-- Datalist ele nao te da opção, voce digita e ele completa com oq tem na lista -->
+            <input list="browsers" name="browsers"/>
+                <!-- o id tem que ser o mesmo da list, ambos browsers -->
+                <datalist id="browsers">
+                    <option value="Internet Explorer"></option>
+                    <option value="Firefox"></option>
+                    <option value="Chrome"></option>
+                    <option value="Opera"></option>
+                    <option value="Safari"></option>
+                </datalist>
+        
+        <!--Fieldset serve para criarmos um campo dentro do formulario, para melhor organizacao  -->
+                <fieldset>
+                    <!-- legenda da um titulo ao nosso formulario -->
+                    <legend>Cadastro</legend>
+                    Nome: <input type="text"><br>
+                    Email: <input type="text"><br>
+                </fieldset>
+                <!-- o label se comunica com o for, passando o campo a que ele se refere -->
+                <!-- o label deve ser utilizado, vc clica no nome ele ja te direciona ao campo correto -->
+                <fieldset>
+                    <legend>Cadastro usuario</legend>
+                    <label for = "nome">Nome2</label>
+                    <input id="nome" type="text">
+                    <label for = "telefone">Telefone2</label>
+                    <input id="telefone" type="text">
+                </fieldset>
+    </form>
+        <!-- time serve para colocar o horario, o datetime e a data e o horario-->
+        <input type="time" />
+        <input type="datetime-local"/>
+        <input type="month"/>
+        <input type="week"/>
+
+        <!-- range que possibilita vc escolher entre um maximo e minimo -->
+        <input type="range" min="0" max="10"/>
+        <!-- no range pode colocar o campo value tbm, para definir o quanto -->
+        <input type="range" min="0" max="10" value="7"/>
+        <!-- color abre uma palheta de cores -->
+        <input type="color" />
+        <!-- file e para selecionar um arquivo da pessoa -->
+        <input type="file"/>
+        <!-- button e do tipo butao -->
+        <input type="button" value="Botão"/>
+        <button>Clique aqui</button>
+        <!-- submit usado quando o usuario clicar envia o formulario -->
+        <button type="submit">Submit</button>
+        <!-- reset reinicia o formulario -->
+        <button type="reset">Reset</button>
+        
+    <form>
+
+
+    </form>
+
+    <form>
+         <!-- O placeholder digite um pequeno texto na caixa do input-->
+        <input type="text" placeholder="Digite seu texto">
+        <!-- O maxlength digita a quantidade maxima de caracteres -->
+        <input type="text" placeholder="maximo 5" maxlength="5">
+        <!-- O required indica que o campo e necessario, so pode ser enviado se ele for preenchido-->
+        <input type="text" placeholder="Campo necessario" required >
+        <!-- O disable deixa o campo desabilitado-->
+        <input type="text" placeholder="Desabilitado" disabled >
+        <!-- O readonly impede as edicoes no campo, fica somente leitura-->
+        <input type="text" placeholder="Apenas leitura" readonly>
+
+         <!-- textarea permite escrever um texto em varias linhas-->
+         <textarea>
+            Texto em varias linhas
+         </textarea>
+        <!-- Pode ter parametros como 30 colunas e 10 linhas -->
+        <textarea name = "" cols ="30" rows="10"></textarea>
+    </form>
+
+</body>
+</html>
