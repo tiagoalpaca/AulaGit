@@ -1,0 +1,315 @@
+/* Seletor = indica qual elemento queremos estilizar,pode ser um ou varios elementos */
+
+/* Propriedade indica o que queremos estilizar,exemplo cor da borda ou tamanho da imagem */
+
+/* Valor indica o valor da propriedade passada */
+/* O nome das cores deve esta em ingles  */
+p{ color: blue;
+
+}
+a{
+    color: red;
+}
+/* RGB  são criadas a partir de 3 cores basicas, vermelho,verde e azul,Red,green e blue*/
+/* Hexadecimal e o formato mais utilizado em edicao de imagens, as cores comecam com # e os nuemros sao de 0 a 255,hexadecimal */
+/* vermelho seria 255,0,0 ou #FF0000, branco seria #FFFFFF,Preto seria #000000,Verde #00FF00,Azul #0000FF */
+p2{
+    color: #FFFFFF
+}
+p3{
+    color: #000000
+
+}
+p4{
+    color: #00FF00
+}
+p5{
+    color: #0000FF
+}
+
+/* O HSL serve para declarar cores de acordo com os parametros, H(Hue = tom), S(Saturarion = saturação), L(Lightness = iluminação) */
+/* color: hsl(hue , saturation, lightness) */
+p1{
+    color: hsl( 0, 88%, 49%);
+}
+
+/* Sites como adobe color ou home host tem palheta de cores */
+
+/* Color = altera a cor da fonte, background altera o fundo do elemento, Opacity e um numero entre 0 e 1,onde 0 e transparente e 1 e opaco */
+/* borders altera as bordas do elemento, cor,tamanho e designer(cor,tamanho,desingner) */
+/* As medidas absolutas sao fixas, serao apresentas exatamente da mesma maneira em todos os lugares, o mais usado e o px */
+/* As medidas relativas tem seu valor em relação ao valor de uma outra propriedade, por exemplo se existe tela de 100 px e a div for 50% de largura,a div tera 100px de largura */
+div{
+    color:orange;
+    background-color:#00FF00;
+    /* border:5px,solid,red; */
+    border-width: 5px;
+    border-style:solid;
+    border-color:black;
+    /* border-radius= 2 rem, arrendota a borda do elemento */
+    /* opacity:0.5; */
+}
+/* text-ident permite aplicar espa a primeira linha de um paragraco */
+p6{
+    text-indent:40px;
+}
+/*text-align alinha os textos, pode ser a direita,esquerdar,centro ou justificado  */
+p7{
+    text-align:left
+}
+p8{
+    text-align:right
+}
+p9{
+    text-align:center
+}
+p10{
+    text-align: justify;
+}
+/* text-decoration aplica efeitos ou decoracoes em textos, ele e mto utilizado para tirar o sublinhado que vem na ancora,usando o valor none */
+p11{
+    /* text-decoration:none */
+    text-decoration:line-through 
+}
+p12{
+    text-decoration: overline;
+}
+p13{
+    text-decoration: underline;
+}
+/* text-transform controla o tipo de caixa, maiscula ou minuscula do texto */
+p14{
+    text-transform: capitalize;
+    /* capitalize torna a primeira letra de cada palavra maiuscula */
+}
+p15{
+    text-transform: uppercase;
+    /* todas as letras maiusculas */
+}
+p16{
+    text-transform: lowercase;
+    /* todas as letras minisculas */
+}
+/* text-shadow adiciona sombras aos tempos, passando posicao horizonta,vertical,nivel de ofuscacao e cor da sombra */
+p17{
+    text-shadow: 2px 2px 5px green;
+}
+p18{
+    text-shadow: 2px 2px 5px red;
+}
+/* font-family e usado para definir o nome da fonte a ser utilizada no documento,pode-se utilizar mais de um tipo de fonte */
+/* https://fonts.google.com/  ,caso utilizar a API do google para utilizar a fonte so precisa um link na seção <head> ou de um @import no CSS*/
+/* font-style utilizada para definir o estilo da fonte,como italico,normal, */
+/* font-weight utilizado para definir o peso da fonte */
+/* font size utilizado para definir o tamanho da fonte em uso */
+p19{
+    margin: 0;
+    padding: 0;
+    font-family: Cairo;
+    font-style: italic;
+    font-weight: 100;
+    font-size: 10px;
+    /* font-family: 'Courier New', Courier, monospace,Arial, Helvetica, sans-serif; */
+}
+/* letter-spacing aplica especo entre as letras do texto e do elemento */
+/* word-spacing define um espacamento entre as palavras do texto */
+p20{
+    word-spacing: 2px;
+}
+/* line-height aplica a altura da linha em porcentagem */
+/* white-space = os espaçoes e tabs em branco sao ignorados pelo browser */
+/* pre = os espacos e tabs sao preservados pelo browser, nao ha quebra de linha */
+/* pre-wrap os espacos e tabs sao preservados pelo browser,  ha quebra de linha*/
+/* nowrap o texto e apresentado em uma unica linha na tela, nao ha quebra de linha ate ser encontrado a tag <br> */
+/* pre-line sequencias de quebra de linha sao preservadas */
+
+/* Existem dois tipos basicos de exibicacao dessas caixas block e inline */
+/* block = elementos que ocupam a linha intenira, o proximo elemento vai para a linha de baixo */
+p21{
+    display:block
+}
+/* Inline(linha) elementos que seu tamanho depende do tamanho do conteudo, nao se define largura ou altura */
+p22{
+    display: inline;
+}
+/* Inline-Block e uma mistura dos dois tipos assim, e uma linha que podemos definir largura e altura */
+p23{
+    display: inline-block;
+}
+/* width define a largura do elemento */
+/* margin define a margem externa do elemento */
+/* padding define a margem interna do elemento */
+/* border define uma borda para o elemento */
+p24{
+    color:white;
+    background-color: blue;
+    width: 50%;
+    margin: 10px;
+    padding: 15px;
+    border: 5px solid black;
+    position: fixed;
+    z-index: 3;
+}
+/* max e min passam um valor maximo e minimo para as dimensoes de um elemento */
+p25{
+    width: 100%;
+    background-color: gray;
+    max-width: 1200px;
+    max-height: 1200 px;
+    min-width: none;
+    min-height: 1px;
+    overflow: scroll;
+    box-shadow: 10px 10 px 10px green;
+    position:relative;
+    z-index: 4;
+}
+/* overflow define quando o conteudo de um elemento deve ser exibido,escondido ou gerar uma barra de rolangem quando ele for maior do que o elemento que o contem */
+/* overflow hidden, faz com que o conteudo do elemento que ultrapasse as dimensoes seja escondido */
+/* overflow visible faz com que o conteudo que ultrapasse os limites do elemento continue visivel */
+/* overflow scroll faz com que a barra de rolagem fique disponivel sempre. Aparece uma vertical e horizontal */
+/* overflow auto faz com que a barra de rolagem fique disponivel automaticamente quando necessario*/
+input{
+    outline: none;
+}
+/* o padrao do HTML e o static,por isso as propriedades top,right,bottom e left nao surtirao efeito nenhum */
+/* O posicionamento fixo e em relacao a tela, nao imprta se houce conteudo suficiente para o scroll, o elemento continuara fixo na tela */
+/* o posicionamento relativo, o elemento sera empurrado em relacao a posicao normal, right:15px o elemento sera empurrado 15px para a direita */
+/* O posicionamento absoluto sera em relacao ao elemento antecessor mais proximo que tenha posicao relativa */
+/* com o Z-index podemos alterar a ordem de empilhamento dos elementos com a propriedade x-inder, os que tiverem maior valor vao para o topo da pilha */
+/* O z-index so funciona em elementos que tenham a propriedade position declaras como fixed,relative ou absolute. */
+
+/* formando as listas */
+/* list-style-image defina uma imagem como marcador para os itens da lista */
+/* Como eu passei um ID para minhas listas,para modificar no CSS basta usar a #ID */
+#Lista1{
+    list-style-image: url(https://d2v0x26thbzlwf.cloudfront.net/prod/5/arquivos/seta.gif);
+    margin: 3rem;
+}
+/* list-style-position altera a posição dos marcadores,pode ser inside ou outside */
+#lista2{
+    margin: 2rem;
+    list-style-position: inside;
+    list-style-type: circle;
+}
+#Lista3{
+    margin: 2rem;
+    list-style-position: outside;
+    list-style-type: decimal;
+}
+/* list-style-type defini um tipo de marcador(estilo), none,disc,circle,square */
+/* lista ordenada pode ser decimal,lower-roman,upper-roman */
+#Lista4{
+    margin: 2rem;
+    list-style-position: outside;
+    list-style-type: none;
+    /* list-style:insede circle; , assim vc consegue colocar 2 propriedades em uma so linha*/
+}
+/* border ajuda na visualização da divisão da tabela */
+/* border-colapse as bordas das tabelas se juntam com essa propriedade */
+/* caption-side e a legenda da tabela, para isso, tem que incluir a tag <caption> na tabela */
+/* empty-cells define quando uma celula vazia deve ser oculta */
+
+#tabela1{
+    border: 2px solid black
+}
+
+#tabela2,th,td,tr{
+    border: 2px solid black;
+    padding: .3rem;
+    margin: 2rem;
+    empty-cells: hide;
+    /* empty-cells nao funciona se as bordas tao collapse */
+}
+#tabela3,th,td,tr{
+    border: 2px solid black;
+    padding: .3rem;
+    border-collapse: collapse;
+    margin: 2rem;
+    
+}
+caption{
+    caption-side: bottom;
+}
+/* Para criar uma variavel no CSS,basta escrevermos dois traços(--)seguido do nome*/
+pcor{
+--minha-cor: orange;
+color: var(--minha-cor)
+} 
+/* Para utilizar a variavel em todos o codigo ela tem que ser raiz */
+:root{
+    --cor-raiz: blue;
+
+}
+/* Pseudo elementos se comportam como elementos HTML,mas são criados a partir do CSS, so precisa colocar o :: */
+/* content exibe um valor de um atributo */
+/* Quando queremos criar nossos proprios atributos,colocamos "data-" antes do nome que queremos dar */
+div::before{
+    content: "css - ";
+}
+div::after{
+    content: "css - ";
+}
+
+/* O gradiente nos permite fazer transições entre duas ou mais cores.Portanto, indica uma cor de inicio outra de fim. */
+/* existe basicamente dois tipos de gradiente linear e radical */
+/* Linear cor de inicio comeca de um lado e a cor de parada termina do lado oposto */
+#div1{
+    height: 200px;
+    background: linear-gradient(aquamarine,orange);
+}
+/* Radial a cor de inicio comeca no centro, o padrao ea forma eliptica */
+#div2{
+    height: 200px;
+    background: radial-gradient(black,red);
+}
+
+/* Media queries são utilizadas para obter um padrão no uso ou nao do CSS, isso facilita um site ser visto em varias plataformas diferentes */
+/* assim vc cria regras para tamanhos de ela distintos */
+body{
+    color:green
+}
+@media screen and (min-width:480pc){
+    body{
+        color:purple;
+    }
+}
+/* width indica a largura da tela, pode receber min e max */
+/* height indica a altura da tela, pode ter min e max */
+/* aspect-ratio indica a proporção da tela,como 16/9 ou 4/3 */
+/* orientation indica se a tela esta no modo retrato(altura maior que largura) ou Paisagem(largura maior do que a altura) */
+/* resolution indica a densidade de pixels do dispositivo */
+/* display-mode indica o modo de exibição da tela,como browser ou fullscreen */
+/* update-frequency indica a frenquendia de atualização da tela no dispositivo */
+
+
+/* Flex box, ele facilita nosso trabalho de alinhar,dimensionar e ordenar elementos em relação aos itens de um conteiner *
+/* para isso precisamos saber as propriedades que vão no conteiner e as que vao nos itens do conteiner */
+/* Display, para começar a utilizar flexbox precisamos diver ao CSS que é o plai dos itens, o flex */
+/* display coloca os itens lado a lado */
+.container{
+    display: flex;
+}
+/* flex-direction indica o exito principal e direção em que os itens serão posicionados */
+.container{ 
+    display: flex;
+    flex-direction: row | row-reverse | column | column-reverse;
+}
+/* flext-wrap, por padrao os itens tentam se encaixar todos na mesma linha */
+.container{
+    display: flex;
+    flex-wrap: nowrap | wrap | wrap-reverse;
+}
+/* flex-flow,abreviação das propriedades flex-direction e flex-wrap. O valor padrão é row nowrap */
+.container{
+    flex-flow: column wrap;
+}
+/* justify-content define o alinhamento dos itens ao longo do eixo principal */
+.container{
+    justify-content: flex-start | flex-end | center | space-around;
+}
+/* order = os elementos são renderizados na ordem em que foram declarados no HTML.Com ele e possivel alterar a ordem de exibição dos itens */
+.item{
+    order:5;
+}
+
+
